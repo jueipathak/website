@@ -1,0 +1,82 @@
+/* AOS (Animate On Scroll) Library CSS */
+/* Version: 2.3.1 */
+/* https://michalsnik.github.io/aos/ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+[data-aos][data-aos-easing] {
+  transition-timing-function: var(--aos-easing);
+}
+
+[data-aos][data-aos-duration] {
+  transition-duration: var(--aos-duration);
+}
+
+[data-aos][data-aos-delay] {
+  transition-delay: var(--aos-delay);
+}
+
+[data-aos][data-aos-anchor] {
+  position: relative;
+}
+
+[data-aos][data-aos-anchor]::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+[data-aos="fade"] {
+  opacity: 0;
+}
+
+[data-aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-20px);
+}
+
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(-20px);
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(20px);
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+}
+
+/* Additional AOS animations can be added here */
