@@ -825,12 +825,22 @@ section,
   overflow: hidden;
 }
 
+.portfolio .portfolio-content a.glightbox {
+  display: block;
+  pointer-events: auto !important;
+}
+
+.portfolio .portfolio-content a.glightbox img {
+  pointer-events: none;
+}
+
 .portfolio .portfolio-content img {
   transition: 0.3s;
 }
 
 .portfolio .portfolio-content .portfolio-info {
   opacity: 0;
+  pointer-events: none;
   position: absolute;
   inset: 0;
   z-index: 3;
@@ -2051,12 +2061,22 @@ section,
   overflow: hidden;
 }
 
+.portfolio .portfolio-content a.glightbox {
+  display: block;
+  pointer-events: auto !important;
+}
+
+.portfolio .portfolio-content a.glightbox img {
+  pointer-events: none;
+}
+
 .portfolio .portfolio-content img {
   transition: 0.3s;
 }
 
 .portfolio .portfolio-content .portfolio-info {
   opacity: 0;
+  pointer-events: none;
   position: absolute;
   inset: 0;
   z-index: 3;
